@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -14,19 +15,51 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  
   min-height: 100vh;
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.app-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.app-side-bar{
+  flex-grow: 1;
+  width: 200px;
+  min-width:200px;
+  background-color: #14181E;
+}
+.app-content{
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;  
+  background-color: #21252D;
+}
+.app-content-line{
+  display: flex;
+  flex-direction: row;
+  
+}
+.app-content-item{  
+  flex-grow: 1;
+  margin: 5px;
+  flex: 1 0 21%; /* explanation below */
+  margin: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.53); 
+  box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.53);
+  border-radius: 10px;
 }
 
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
