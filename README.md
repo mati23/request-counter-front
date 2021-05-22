@@ -48,3 +48,7 @@
 }
 ```
 
+## Objectives
+The objective is to use this as a dashboard for AWS and see for each region which one is being more used in a svg map.
+
+![Request Map](./images/map.PNG)
